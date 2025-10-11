@@ -1,7 +1,7 @@
 # FFT-MIL: Fourier Transform Multiple Instance Learning for Whole Slide Image Classification
 
 ## Summary
-We propose Fourier Transform Multiple Instance Learning (FFT-MIL), a framework that augments MIL for WSI classification with a frequency-domain branch to provide compact global context. Low-frequency crops are extracted fromWSIs via the Fast Fourier Transform and processed through a modular FFT-Block composed of convolutional layers and Min-Max normalization to mitigate the high variance of frequency data. The learned global frequency feature is fused with spatial patch features through lightweight integration strategies, enabling compatibility with a diverse set MIL of architectures.
+We propose Fourier Transform Multiple Instance Learning (FFT-MIL), a framework that augments MIL for WSI classification with a frequency-domain branch to provide compact global context. Low-frequency crops are extracted from WSIs via the Fast Fourier Transform and processed through a modular FFT-Block composed of convolutional layers and Min-Max normalization to mitigate the high variance of frequency data. The learned global frequency feature is fused with spatial patch features through lightweight integration strategies, enabling compatibility with a diverse set MIL of architectures.
 
 ## Architecture
 ![Architecture](figures/architecture.PNG)
