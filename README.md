@@ -4,21 +4,9 @@
 We propose Fourier Transform Multiple Instance Learning (FFT-MIL), a framework that augments MIL for WSI classification with a frequency-domain branch to provide compact global context. Low-frequency crops are extracted from WSIs via the Fast Fourier Transform and processed through a modular FFT-Block composed of convolutional layers and Min-Max normalization to mitigate the high variance of frequency data. The learned global frequency feature is fused with spatial patch features through lightweight integration strategies, enabling compatibility with a diverse set MIL of architectures.
 
 ## Architecture
-![Architecture](figures/architecture.PNG)
+![Architecture](figures/architecture.jpg)
 
-## Preprocessing
-![Preprocessing](figures/preprocessing.PNG)
-
-## Setup Overview
-1. Install requirements  
-2. Create data directories 
-3. Download datasets  
-4. Preprocess images and Setup ACMIL split
-5. Create frequency representations
-6. Replicate results
-7. Paper results
-8. Future directions
----
+## Setup
 
 ### 1. Install requirements
 ```bash
@@ -30,7 +18,8 @@ pip install -r requirements.txt
 
 ### 2. Create data directories
 ```bash
-python FFT-MIL/dataset_setup/setup_data_dirs.py
+# FFT-MIL refers to the path of the top-level of this repository.
+python FFT-MIL/dataset_setup/setup_data_dirs.py 
 ```
 <details>
   <summary>Expected file structure</summary>
@@ -47,7 +36,6 @@ python FFT-MIL/dataset_setup/setup_data_dirs.py
 </details>
 
 ### 3. Download datasets (Ubuntu 22.04)
-*Note: `FFT-MIL` refers to the path of the top-level of this repository.*
 
 #### A. [BRACS](https://www.bracs.icar.cnr.it/download/)
 ```bash
@@ -101,6 +89,7 @@ create_imp_fft.py
 create_luad_fft.py
 ```
 
+![Preprocessing](figures/preprocessing.jpg)
 
 ### 6. Replicate results
 *Note: Run each file from their **DIRECTORY**, where the `<DATASET>` corresponds to the dataset on which you wish to run the experiment.*
@@ -133,8 +122,6 @@ For example, to run the CLAM method on the BRACS dataset, you would run:
 cd FFT-MIL/CLAM/
 python train_clam_BRACS.py
 ```
-
-![Results](figures/results.PNG)
 
 ## References
 This repository incorporates code from the following papers.
