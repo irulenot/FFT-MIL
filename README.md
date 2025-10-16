@@ -128,3 +128,6 @@ This repository incorporates code from the following papers.
 - [Data Efficient and Weakly Supervised Computational Pathology on Whole Slide Images (CLAM)](https://github.com/mahmoodlab/CLAM)
 - [Attention-Challenging Multiple Instance Learning for Whole Slide Image Classification (ACMIL)](https://github.com/dazhangyu123/ACMIL)
 - [Exploring Diverse Global Representation in Multiple Instance Learning for Whole Slide Image Classification (DGR-MIL)](https://github.com/ChongQingNoSubway/DGR-MIL)
+
+## For Researchers Seeking to Extend This Work 
+Please refer to figures\discussion.zip.
