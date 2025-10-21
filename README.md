@@ -1,7 +1,7 @@
-# FFT-MIL: Fourier Transform Multiple Instance Learning for Whole Slide Image Classification
+# [FFT-MIL: Fourier Transform Multiple Instance Learning for Whole Slide Image Classification](https://arxiv.org/abs/2510.15138)
 
 ## Summary
-We propose Fourier Transform Multiple Instance Learning (FFT-MIL), a framework that augments MIL for WSI classification with a frequency-domain branch to provide compact global context. Low-frequency crops are extracted from WSIs via the Fast Fourier Transform and processed through a modular FFT-Block composed of convolutional layers and Min-Max normalization to mitigate the high variance of frequency data. The learned global frequency feature is fused with spatial patch features through lightweight integration strategies, enabling compatibility with a diverse set MIL of architectures.
+We propose Fourier Transform Multiple Instance Learning (FFT-MIL), a framework that augments MIL for WSI classification with a frequency-domain branch to provide compact global context. Low-frequency crops are extracted from WSIs via the Fast Fourier Transform and processed through a modular FFT-Block composed of convolutional layers and Min-Max normalization to mitigate the high variance of frequency data. The learned global frequency feature is fused with spatial patch features through lightweight integration strategies, enabling compatibility with a diverse set of MIL architectures.
 
 ## Architecture
 ![Architecture](figures/architecture.jpg)
@@ -129,5 +129,19 @@ This repository incorporates code from the following papers.
 - [Attention-Challenging Multiple Instance Learning for Whole Slide Image Classification (ACMIL)](https://github.com/dazhangyu123/ACMIL)
 - [Exploring Diverse Global Representation in Multiple Instance Learning for Whole Slide Image Classification (DGR-MIL)](https://github.com/ChongQingNoSubway/DGR-MIL)
 
-## For Researchers Seeking to Extend This Work 
-Please refer to figures\discussion.zip.
+## Notes for Researchers Building Upon This Work
+Researchers seeking to build upon this work can consult [**discussion.zip**](figures/discussion.zip) for additional context, including methodological notes, limitations, and potential avenues for future research.
+
+## Citation
+If you find this work useful, please cite:
+
+```bibtex
+@misc{bilic2025fouriertransformmultipleinstance,
+  title={Fourier Transform Multiple Instance Learning for Whole Slide Image Classification},
+  author={Anthony Bilic and Guangyu Sun and Ming Li and Md Sanzid Bin Hossain and Yu Tian and Wei Zhang and Laura Brattain and Dexter Hadley and Chen Chen},
+  year={2025},
+  eprint={2510.15138},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2510.15138}
+}
